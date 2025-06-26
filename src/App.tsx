@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import AuthPage from './pages/AuthPage';
+import Home from './pages/home';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
         <Route path="/login" element={<AuthPage formType="login" />} />
 
         <Route path="/signup" element={<AuthPage formType="signup" />} />
+
+        <Route path="/home" element={<Home />} />
       </Routes>
     </Router>
   );
